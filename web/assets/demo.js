@@ -303,13 +303,13 @@ function uploadResumeFile(file) {
 function fillSample() {
   el("smartPasteBox").value = sampleText;
   applySmartFields(extractSmartFields(sampleText));
-  el("profileName").value = "权欣旖";
-  el("profileSchool").value = "中国传媒大学";
+  el("profileName").value = "张同学";
+  el("profileSchool").value = "示例大学";
   el("profileYear").value = "2027";
   el("profileMajor").value = "数字媒体技术";
   el("profileAvailability").value = "一周内到岗";
   el("profilePeriod").value = "可连续实习 3 个月以上";
-  el("profilePhone").value = "13800000000";
+  el("profilePhone").value = "138****0000";
   el("profileEmail").value = "candidate@example.com";
   el("profileSummary").value = "具备 AIGC 工具应用、内容分析和自动化流程搭建经验，能够从需求拆解到交付复盘完成完整项目。";
   el("profileHighlights").value = [

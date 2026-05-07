@@ -20,7 +20,7 @@
 ## 快速开始
 
 ```bash
-cd /Users/quanxinyi/Desktop/自动简历投递
+cd 智能求职投递助手
 cp .env.example .env
 cp config/profile.example.json config/profile.json
 python3 app.py --port 8765
