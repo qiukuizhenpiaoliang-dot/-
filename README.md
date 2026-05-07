@@ -6,6 +6,10 @@
 
 在线演示：[https://qiukuizhenpiaoliang-dot.github.io/-/](https://qiukuizhenpiaoliang-dot.github.io/-/)
 
+项目介绍页：[project-intro.html](./project-intro.html)
+
+配套介绍稿：[项目介绍稿.md](./项目介绍稿.md)
+
 ## 功能
 
 - JD 与个人背景匹配分析
