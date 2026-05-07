@@ -1,0 +1,12 @@
+[project]
+name = "smart-job-apply-assistant"
+version = "0.1.0"
+description = "Local LLM-powered job application email assistant with SMTP resume delivery."
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+llm = ["openai"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

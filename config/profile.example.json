@@ -1,0 +1,17 @@
+{
+  "name": "你的姓名",
+  "school": "某某学校",
+  "graduation_year": "2027",
+  "major": "某某专业",
+  "target_role": "目标岗位",
+  "availability": "一周内到岗",
+  "internship_period": "可连续实习 3 个月以上",
+  "phone": "你的手机号",
+  "contact_email": "你的邮箱",
+  "summary": "用 1-2 句话概括你的核心背景，例如：具备数据分析、用户研究和 AIGC 工具落地经验，做过从需求拆解到交付复盘的完整项目。",
+  "highlights": [
+    "亮点 1：与目标岗位强相关的项目、实习或课程经历",
+    "亮点 2：可量化成果，例如提升效率、完成调研、搭建流程、产出报告",
+    "亮点 3：工具栈或能力，例如 Python、SQL、Excel、PowerPoint、AIGC、沟通协作"
+  ]
+}
