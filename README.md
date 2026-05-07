@@ -4,6 +4,8 @@
 
 项目提交表可查看：[项目简介.md](./项目简介.md)
 
+在线演示：[https://qiukuizhenpiaoliang-dot.github.io/-/](https://qiukuizhenpiaoliang-dot.github.io/-/)
+
 ## 功能
 
 - JD 与个人背景匹配分析

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>智能求职投递助手 - 演示</title>
+    <link rel="stylesheet" href="web/assets/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">智能求职投递助手</p>
+        <h1>JD 定制邮件投递演示</h1>
+      </div>
+      <div class="status-strip" aria-live="polite">
+        <span id="llmStatus">AI 演示模式</span>
+        <span id="smtpStatus">SMTP 演示模式</span>
+        <span id="resumeStatus">简历待选择</span>
+      </div>
+    </header>
+
+    <main class="workspace">
+      <section class="panel input-panel" aria-label="投递输入">
+        <div class="section-title">
+          <h2>投递信息</h2>
+          <div class="button-row">
+            <button id="sampleBtn" class="ghost-btn" type="button">示例数据</button>
+            <button id="generateBtn" class="primary-btn" type="button">生成邮件</button>
+          </div>
+        </div>
+
+        <div class="smart-paste">
+          <label class="stacked">
+            <span>整段粘贴</span>
+            <textarea id="smartPasteBox" class="paste-box" spellcheck="false"></textarea>
+          </label>
+          <div class="button-row smart-actions">
+            <button id="readClipboardBtn" class="ghost-btn" type="button">读取剪贴板</button>
+            <button id="parsePasteBtn" class="ghost-btn" type="button">拆分填入</button>
+          </div>
+        </div>
+
+        <div class="field-grid">
+          <label>
+            <span>HR 邮箱</span>
+            <input id="hrEmail" type="email" autocomplete="email" placeholder="hr@example.com" />
+          </label>
+          <label>
+            <span>公司 / 部门</span>
+            <input id="company" type="text" placeholder="可选" />
+          </label>
+          <label>
+            <span>岗位名称</span>
+            <input id="targetRole" type="text" placeholder="可选" />
+          </label>
+          <label class="resume-field">
+            <span>简历</span>
+            <div id="resumeDropzone" class="dropzone" tabindex="0">
+              <input id="resumeFileInput" type="file" accept=".pdf,.doc,.docx" hidden />
+              <strong id="resumeDropTitle">拖拽或上传简历</strong>
+              <small id="resumeDropMeta">PDF / DOC / DOCX</small>
+            </div>
+            <input id="resumePath" type="text" placeholder="demo-resume.pdf" />
+          </label>
+        </div>
+
+        <label class="stacked">
+          <span>JD 文本</span>
+          <textarea id="jdText" class="jd-box" spellcheck="false"></textarea>
+        </label>
+
+        <details class="profile-box" open>
+          <summary>个人背景</summary>
+          <div class="field-grid profile-grid">
+            <label>
+              <span>姓名</span>
+              <input id="profileName" type="text" />
+            </label>
+            <label>
+              <span>学校</span>
+              <input id="profileSchool" type="text" />
+            </label>
+            <label>
+              <span>届别</span>
+              <input id="profileYear" type="text" />
+            </label>
+            <label>
+              <span>专业</span>
+              <input id="profileMajor" type="text" />
+            </label>
+            <label>
+              <span>到岗时间</span>
+              <input id="profileAvailability" type="text" />
+            </label>
+            <label>
+              <span>实习周期</span>
+              <input id="profilePeriod" type="text" />
+            </label>
+            <label>
+              <span>电话</span>
+              <input id="profilePhone" type="text" />
+            </label>
+            <label>
+              <span>邮箱</span>
+              <input id="profileEmail" type="email" />
+            </label>
+          </div>
+          <label class="stacked">
+            <span>背景概述</span>
+            <textarea id="profileSummary" class="small-box"></textarea>
+          </label>
+          <label class="stacked">
+            <span>核心亮点</span>
+            <textarea id="profileHighlights" class="small-box"></textarea>
+          </label>
+        </details>
+      </section>
+
+      <section class="panel output-panel" aria-label="邮件预览">
+        <div class="section-title">
+          <h2>邮件预览</h2>
+          <div class="button-row">
+            <button id="copyTitleBtn" class="ghost-btn" type="button">复制标题</button>
+            <button id="copyBodyBtn" class="ghost-btn" type="button">复制正文</button>
+            <button id="sendBtn" class="send-btn" type="button" disabled>发送邮件</button>
+          </div>
+        </div>
+
+        <label class="stacked">
+          <span>标题</span>
+          <textarea id="subjectPreview" class="subject-box"></textarea>
+        </label>
+        <label class="stacked grow">
+          <span>正文</span>
+          <textarea id="bodyPreview" class="body-box"></textarea>
+        </label>
+      </section>
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="web/assets/demo.js"></script>
+  </body>
+</html>
